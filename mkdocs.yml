@@ -1,3 +1,62 @@
 site_name: Selected Topics in CS & Math
+site_description: >-
+    Selected topics in CS & Math explained in excrutiating detail
+repo_name: ankur-gupta/interviews
+repo_url: https://github.com/ankur-gupta/interviews
+edit_uri: edit/master/docs/
+copyright: Copyright &copy; Ankur Gupta
 theme:
-  name: material
+    name: material
+    custom_dir: overrides
+    language: en_custom
+    features:
+        - tabs
+    palette:
+        scheme: preference
+        primary: light green
+        accent: light green
+    icon:
+        logo: fontawesome/solid/infinity
+    favicon: assets/images/favicon.svg
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ankur-gupta
+    - icon: fontawesome/brands/pied-piper-alt
+      link: https://www.perfectlyrandom.org
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ankurguptawisc
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ankurio
+plugins:
+    - search:
+        lang: en
+    - git-revision-date-localized:
+        type: timeago
+        fallback_to_build_date: true
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - attr_list
+    - def_list
+    - pymdownx.highlight:
+        use_pygments: true
+        linenums: true
+        linenums_style: pymdownx.inline
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.tabbed
+    - footnotes
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.smartsymbols
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - def_list
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - meta
