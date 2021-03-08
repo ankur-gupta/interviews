@@ -1,7 +1,8 @@
 # Introduction
 
-This course is in a very rough shape. Please wait until it has reached a first release.
-All links here are subject to change.
+!!! warning
+    This course is in a very rough shape. Please wait until it has reached a first release. All links here are subject to change.
+
 ## What is this course?
 This course teaches selected topics in computer science and mathematics in detail with lots of
 examples. Most of these topics are useful for Software Engineering or ML/Data Scientist interviews;
