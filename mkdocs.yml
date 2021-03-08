@@ -34,6 +34,10 @@ plugins:
     - git-revision-date-localized:
         type: timeago
         fallback_to_build_date: true
+extra_javascript:
+    - javascripts/config.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
     - toc:
         permalink: true
@@ -60,3 +64,19 @@ markdown_extensions:
     - pymdownx.tasklist:
         custom_checkbox: true
     - meta
+    - pymdownx.arithmatex:
+        generic: true
+nav:
+    - Get Started:
+        - Introduction: index.md
+        - How to practice?: how-to-practice.md
+    - Number Systems:
+        - Decimal is not special: number-systems/decimal-is-not-special.md
+        - Alien Two-Stick Measurement System: number-systems/alien-two-stick-measurement-system.md
+        - Binary to Hexadecimal: number-systems/binary-to-hexadecimal.md
+    - Algorithmic Complexity:
+        - Space is not Time: algorithmic-complexity/space-is-not-time.md
+        - Precision is important: algorithmic-complexity/precision-is-important.md
+    - Tips & Tricks:
+        - Hashing to find strangers: tips-and-tricks/hashing-to-find-strangers.md
+        - Rolling Window: tips-and-tricks/rolling-window.md
